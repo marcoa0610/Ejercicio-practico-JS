@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Cajero Automático</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Cajero Automático</h1> 
+        <div style="text-align: center;">
+        <img src="images/banco_318-314245.avif" alt="banco" width="200">
+    </div>
+    <br>
+        <form>
+            <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="nombreUsuario">
+                </div>
+                <div class="col">
+                  <input type="number" class="form-control" placeholder="Ingesar Cantidad a Retirar ($)" aria-label="cantidadRetiro" id="cantidadRetiro">
+                </div>
+            </div>
+            <br>
+            <button type="button" class="btn btn-primary" id="Retiro">Realizar Retiro</button>
+        </form>
+        <br>
+        <div id="liveAlertPlaceholder"></div>
+        <h2>Resultado:</h2>
+        <p id="prueba"></p>
+        <div id="resultado">
+            <div class="container">
+                <div class="row">
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <div class="alert alert-success" id="billetes100">
+                                Billetes de 100: 
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="alert alert-success" id="billetes50">
+                                Billetes de 50: 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <div class="alert alert-success" id="billetes20">
+                                Billetes de 20: 
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="alert alert-success" id="billetes10">
+                                Billetes de 10: 
+                        </div>
+                    </div>
+                    <div class="row align-items-start">
+                        </div>
+                        <div class="col">
+                            <div class="alert alert-success" id="billetes5">
+                                Billetes de 5: 
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="alert alert-success" id="billetes1">
+                                Billetes de 1: 
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="cajero.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>
